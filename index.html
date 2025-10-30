@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практична робота Функції</title>
+
+<style>
+.button-link {
+    /* Візуальні властивості кнопки */
+    display: inline-block; /* Робить посилання схожим на блок, дозволяючи задавати відступи та ширину */
+    padding: 10px 20px; /* Внутрішні відступи: 10px зверху/знизу, 20px зліва/справа */
+    margin: 10px; /* Зовнішні відступи між кнопками */
+    
+    /* Дизайн */
+    background-color: #007bff; /* Синій колір фону */
+    color: white; /* Білий колір тексту */
+    border: none; /* Прибираємо межу */
+    border-radius: 5px; /* Заокруглені кути */
+    box-shadow: 0 4px #0056b3; /* Легка тінь для 3D-ефекту */
+    
+    /* Текст */
+    text-decoration: none; /* Прибираємо підкреслення */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    text-align: center;
+    cursor: pointer; /* Зміна курсору на "руку" */
+    
+    /* Анімація */
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+/* Ефект при наведенні курсору (Hover) */
+.button-link:hover {
+    background-color: #0056b3; /* Темніший синій при наведенні */
+    box-shadow: 0 5px #004085; /* Тінь стає трохи більшою */
+    transform: translateY(-1px); /* Легке підняття кнопки */
+}
+
+/* Ефект при натисканні (Active/Clicked) */
+.button-link:active {
+    background-color: #004085; /* Ще темніший синій */
+    box-shadow: 0 2px #004085; /* Тінь "втискається" */
+    transform: translateY(2px); /* Кнопка "натискається" */
+}
+</style>
+
 </head>
 <body>
-    <a target="_blank" href="function_power_of_x.html">x в степені n</a>
-    <a target="_blank" href="function_factorial.html">Factorial</a>
-    <a target="_blank" href="function_quadratic.html" target="_blank">Квадратне рівняття</a>
+    <a class="button-link" target="_blank" href="function_power_of_x.html">x в степені n</a>
+    <a class="button-link" target="_blank" href="function_factorial.html">Factorial</a>
+    <a class="button-link" target="_blank" href="function_quadratic.html" target="_blank">Квадратне рівняння</a>
 </body>
 </html>
